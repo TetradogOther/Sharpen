@@ -1,7 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Sharpen.Port</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <Copyright>Sharpen</Copyright>
+    <PackageProjectUrl>https://github.com/TetradogOther/Sharpen</PackageProjectUrl>
+    <Description>a simple port to .netstandard2.0</Description>
+    <Product>Sharpen.Port</Product>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -10,7 +18,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SharpZipLib" Version="1.0.0" />
+    <PackageReference Include="SharpZipLib.Port" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
